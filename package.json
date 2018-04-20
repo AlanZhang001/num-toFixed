@@ -1,0 +1,38 @@
+{
+  "name": "num-toFixed",
+  "version": "1.0.0",
+  "description": "toFixed with Math.round,fixed the bug of original toFixed function",
+  "main": "./dist/index.js",
+  "dependencies": {},
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack --env.NODE_ENV=build",
+    "build-min": "webpack --env.NODE_ENV=build-min",
+    "builds": "npm run build && npm run build-min",
+    "example": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlanZhang001/num-toFixed.git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "child_process": "^1.0.2",
+    "eslint": "^3.19.0",
+    "extend": "^3.0.1",
+    "gulp": "^3.9.1",
+    "mocha": "^3.2.0",
+    "opener": "^1.4.3",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "webpack": "^2.3.3"
+  },
+  "keywords": [
+    "toFixed",
+    "round"
+  ],
+  "author": "alanzhang",
+  "license": "ISC"
+}
