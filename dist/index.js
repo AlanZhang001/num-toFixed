@@ -90,16 +90,13 @@ return /******/ (function(modules) { // webpackBootstrap
  * 使用定点表示法来格式化一个数
  * @param  {String|Number}  num     [必选，数字或者表示数字的字符串,范围为[0,20],超过范围则报错]
  * @param  {Number}  digits  [必选，小数点后数字的个数]
- * @param  {Boolean} isRound [可选，格式化时是否四舍五入，默认为true，即进行四舍五入,为false时直接截取，不满足位数的往后补0]
+ * @param  {Boolean} isRound [可选，格式化时是否四舍五入，默认为false，即进行四舍五入,为false时直接截取，不满足位数的往后补0]
  * @return {String}          [结果]
  */
 function pFixed(num, digits, isRound) {
     // 是否为正数
     var isPositive = (+num >= 0);
     num += '';
-    if (isRound === undefined) {
-        isRound = true;
-    }
 
     isRound = Boolean(isRound);
     // 去掉正负号，统一按照正数来处理，最后再加上符号
@@ -160,9 +157,9 @@ function pFixed(num, digits, isRound) {
             // 取整
             enlarge = Math.round(enlarge) + '';
             // 缩小10的N次方
-            while(enlarge.length <= digits){
-                enlarge = '0' + enlarge;
-            }
+            // while(enlarge.length <= digits){
+            //     enlarge = '0' + enlarge;
+            // }
             result = enlarge.substr(0, enlarge.length - digits) + '.' + enlarge.substr(enlarge.length - digits);
         }
     }
