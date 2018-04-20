@@ -157,9 +157,9 @@ function pFixed(num, digits, isRound) {
             // 取整
             enlarge = Math.round(enlarge) + '';
             // 缩小10的N次方
-            // while(enlarge.length <= digits){
-            //     enlarge = '0' + enlarge;
-            // }
+            while(enlarge.length <= digits){
+                enlarge = '0' + enlarge;
+            }
             result = enlarge.substr(0, enlarge.length - digits) + '.' + enlarge.substr(enlarge.length - digits);
         }
     }

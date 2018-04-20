@@ -11,6 +11,13 @@ describe('toFixed方法测试-直接截取', function() {
         expect(toFixed(0.09,0,false)).to.equal('0');
         expect(toFixed(0.99,3,false)).to.equal('0.990');
         expect(toFixed(.99,3,false)).to.equal('0.990');
+        expect(toFixed(0.099999,3)).to.equal('0.099');
+        expect(toFixed(0.09,2)).to.equal('0.09');
+        expect(toFixed(0.09,1)).to.equal('0.0');
+        expect(toFixed(0.09,5)).to.equal('0.09000');
+        expect(toFixed(0.09,0)).to.equal('0');
+        expect(toFixed(0.99,3)).to.equal('0.990');
+        expect(toFixed(.99,3)).to.equal('0.990');
     });
 
     it('正浮点数[Number]-大于1-toFixed', function() {
