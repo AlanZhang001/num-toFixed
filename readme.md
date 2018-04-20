@@ -1,4 +1,4 @@
-# npm-example组件说明
+# num-tofixed组件说明
 
 - 修正原生toFixed方法的精度问题
 - 支持四舍五入和直接截取
@@ -70,6 +70,9 @@ toFixed(.99,3,false)      // '0.990'
 **return** `String`
 
 ## 版本记录
+
+#### v1.0.3 2018-04-20
+- 修正readme
 
 #### v1.0.1，1.0.2 2018-04-20
 - 修正isRound的默认值为false

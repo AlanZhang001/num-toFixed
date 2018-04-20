@@ -1,6 +1,6 @@
 {
   "name": "num-tofixed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "toFixed with Math.round,fixed the bug of original toFixed function",
   "main": "./dist/index.js",
   "dependencies": {},
