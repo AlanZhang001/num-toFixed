@@ -6,7 +6,7 @@
 ## 安装
 
 ```sh
-npm install num-toFixed --save
+npm install num-tofixed --save
 ```
 
 ## 使用
@@ -22,7 +22,7 @@ npm test
 // 通过script标签引入
 // var toFixed = window.toFixed;
 
-var toFixed = require('num-toFixed');
+var toFixed = require('num-tofixed');
 
 // 精确度取四舍五入值
 toFixed(0.099999,3,true) //  '0.100'
