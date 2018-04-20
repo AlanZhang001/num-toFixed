@@ -20,7 +20,7 @@ let commonConfig = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'umd',
-        library: '[name]'
+        library: 'toFixed'
     },
     watch: false,
     devtool: ''

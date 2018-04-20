@@ -5,14 +5,13 @@
   "main": "./dist/index.js",
   "dependencies": {},
   "directories": {
-    "example": "example",
     "test": "test"
   },
   "scripts": {
     "build": "webpack --env.NODE_ENV=build",
     "build-min": "webpack --env.NODE_ENV=build-min",
     "builds": "npm run build && npm run build-min",
-    "example": " "
+    "test": "opener ./test/unittest/index.html"
   },
   "repository": {
     "type": "git",
